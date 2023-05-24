@@ -12,4 +12,16 @@ Abhinav
 customer = []
 
 def AddCustomer():
-    
+    n = int(input("How many customer do you want to add : "))
+    for i in range(n):
+        newCustomer = str(input("Customer you want to add : "))
+        customer.append(newCustomer)
+        print(customer)
+
+def DeleteCustomer():
+    newCustomer = str(input("Customer you want to remove : "))
+    customer.remove(newCustomer)
+    print(customer)
+
+AddCustomer()
+DeleteCustomer()
